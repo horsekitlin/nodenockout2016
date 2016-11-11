@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hack2016</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <button class="aaa btn btn-default" data-key="login">登入</button>
+        <button class="aaa btn btn-default" data-key="test">答題頁面</button>
+        <button class="aaa btn btn-default" data-key="examend">答題完成</button>
+        <button class="aaa btn btn-default" data-key="list">成績列表</button>
+        <button class="aaa btn btn-default" data-key="result">歷史列表</button>
+    <div class="container-fluid">
+        
+        <div class="full-container">
+            <!--考試結束-->
+            <div id="examend" class="hide">
+                <div class="test-container">
+                   
+                    <div class="row examendRow">
+                        <p>答對<span class="text-danger">5</span>題</p>
+                    </div>
+                     <div class="row examendRow">
+                        <p>答對<span class="text-success">5</span>題</p>
+                    </div>
+                     <div class="row examendRow">
+                        <p>分數 <span class="text-info">778389377275</span></p>
+                    </div>
+                    <div class="row examendBTN">
+                        <div class="col-lg-4">
+                            <button class="btn btn-success customBTN">再次挑戰</button>
+                        </div>
+                        <div class="col-lg-4">
+                            <button class="btn btn-warning customBTN">回首頁</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--考試區塊-->
+            <div id="test" class="hide">
+                <div class="test-container">
+                    <div id="exam-title">
+                        <p id="exam-text">Q1: 下列哪一個不是動物？</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <button class="btn btn-warning customBTN">熱狗</button>
+                        </div>
+                        <div class="col-lg-4">
+                            <button class="btn btn-warning customBTN">熱狗</button>
+                        </div>
+                        <div class="col-lg-4">
+                            <button class="btn btn-warning customBTN">大熱狗</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!--結果列表區塊-->
+            <div id="result" class="hide">
+                <div class="list-group">
+                    <div class="row gameStartBTN">
+                        <div class="col-lg-3">
+                            <img class="logo" src="http://www.cutestpaw.com/wp-content/uploads/2016/02/s-Yawn..jpeg">
+                        </div>
+                        <div class="col-lg-7">
+                            <p class="text-success big-score">123456</p>
+                        </div>
+                    </div>
+
+                    <div class="row item">
+                        <div class="col-lg-2">
+                            <p class="listText">hello</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">跳跳跳跳</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">100000</p>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-lg-2">
+                            <p class="listText">hello</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">跳跳跳跳</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">100000</p>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-lg-2">
+                            <p class="listText">hello</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">跳跳跳跳</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">100000</p>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-lg-2">
+                            <p class="listText">hello</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">跳跳跳跳</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">100000</p>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-lg-2">
+                            <p class="listText">hello</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">跳跳跳跳</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">100000</p>
+                        </div>
+                    </div>
+                    <div class="text-center resultBTN">
+
+                        <button class="btn btn-primary">回上頁</button>
+                    </div>
+                </div>
+
+            </div>
+            <!--列表區塊-->
+            <div id="list" class="hide">
+                <div class="list-group">
+                    <div class="row item">
+                        <div class="col-lg-2">
+                            <p class="listText">hello</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">跳跳跳跳</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">100000</p>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-lg-2">
+                            <p class="listText">hello</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">跳跳跳跳</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">100000</p>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-lg-2">
+                            <p class="listText">hello</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">跳跳跳跳</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">100000</p>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-lg-2">
+                            <p class="listText">hello</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">跳跳跳跳</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">100000</p>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="col-lg-2">
+                            <p class="listText">hello</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">跳跳跳跳</p>
+                        </div>
+                         <div class="col-lg-5">
+                            <p class="listText">100000</p>
+                        </div>
+                    </div>
+                    <div class="row gameStartBTN">
+                        <div class="col-lg-7">
+                            <p>logo</p>
+                        </div>
+                        <div class="col-lg-5">
+                            <button class="btn btn-primary"> 開始遊戲</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--登入區塊-->
+            <div id="login" class="hide">
+                <form class="loginForm">
+                    <div class="row">
+                    <div class="input-group row input-group-sm loginInput">
+                        <span class="input-group-addon" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group row input-group-sm loginInput">
+                        <span class="input-group-addon" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                    </div>  
+                    <div class="input-group row input-group-sm loginSubmit">
+                        <input type="submit" class="btn btn-default" placeholder="Password" aria-describedby="basic-addon1" value="登入">
+                    </div> 
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/login.js"></script>
+</html>
